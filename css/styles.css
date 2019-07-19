@@ -1,15 +1,21 @@
 
 h1 {
-  font-size: 25%;
+  color: white;
+  font-weight: 50;
 }
 
 h2 {
   font-size: 25%;
+  color: white;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
   border-radius: 50%;
-  max-width: 50%;
+  margin-left: 10%;
+  width: 25%;
   height: auto;
 }
 
@@ -67,8 +73,10 @@ input:checked[type="checkbox"]:before
 
 .header {
     display: grid;
+    grid-template-columns: 3fr 1fr;
     grid-area: hd;
     background-color: #00208085;
+    grid-template-rows: 100px;
 }
 .main-content {
     grid-area: main;
@@ -97,23 +105,25 @@ input:checked[type="checkbox"]:before
 }
 
 #header-title {
+  display: inline-flex;
+  margin-left: 5%;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
 #header-bell {
-  grid-column-start: 5;
-  grid-column-end: 6;
+  width: 5%;
+  align-self: center;
+  margin-left: 70%;
 }
 
 #header-avatar {
-  grid-column-start: 7;
-  grid-column-end: 8;
-}
-
-#header-profile-name {
-  grid-column-start: 8;
-  grid-column-end: 9;
+  display: inline-flex;
+  border-left: 1px solid black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 #line-graph {
