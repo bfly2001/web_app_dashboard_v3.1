@@ -230,22 +230,32 @@
           <div class="nested" id="message-user">
             <h3>Message User</h3>
             <form id='form1'>
-              <input type="search" id="mySearch" name="q" placeholder="Search for User">
+              <input type="search" id="userSearch" name="q" placeholder="Search for User">
+              <textarea id="message" name="message" form="form1">Message for User</textarea>
+              <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
             </form>
-              <textarea name="message" form="form1">Message for User</textarea>
-              <button type="submit" form="form1" value="Submit">Send</button>
           </div>
           <div class="nested" id="settings">
             <h3>Settings</h3>
-            <div>
+            <div id="email-notification">
               <label for="email-notification" name='email-notifications'>Send Email Notifications</label>
               <input type="checkbox" id="email-notification" placeholder="ON">
             </div>
-            <div>
+            <div id="profile-public">
               <label for="profile-public" name='profile-public'>Set Profile to Public</label>
               <input type="checkbox" id="profile-public" placeholder="ON">
             </div>
+            <div>
+            <select>
+              <option selected disabled>Select Timezone</option>
+              <option value="Pacific">Pacific</option>
+              <option value="Mountain">Mountain</option>
+              <option value="Central">Central</option>
+              <option value="Eastern">Eastern</option>
+            </select>
           </div>
+          <button id="saveSubmit" type="submit" form="form2" value="Save">Save</button>
+          <button id="cancelSubmit" type="submit" form="form2" value="Cancel">Cancel</button>
         </div>
       </div>
   </body>

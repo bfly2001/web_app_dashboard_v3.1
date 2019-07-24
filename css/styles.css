@@ -5,6 +5,7 @@ a {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  font-family: 'Muli', sans-serif;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h3 {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  font-family: 'Muli', sans-serif;
 }
 
 h4 {
@@ -35,6 +37,7 @@ h4 {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  font-family: 'Muli', sans-serif;
 }
 
 h5 {
@@ -42,6 +45,7 @@ h5 {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  font-family: 'Muli', sans-serif;
 }
 
 img {
@@ -103,7 +107,15 @@ input:checked[type="checkbox"]:before
 
 sup {
   font-size: xx-small;
+  font-family: 'Muli', sans-serif;
 }
+
+select {
+  width: 100%;
+  border: grey 1px solid;
+  margin-bottom: 5%;
+}
+
 .header {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -114,7 +126,7 @@ sup {
 .main-content {
     grid-area: main;
     display: grid;
-    margin: 2%;
+    margin: 0;
 }
 .sidebar-navigation {
     display: grid;
@@ -229,6 +241,7 @@ sup {
   grid-column-end: 2;
   grid-row-start: 6;
   grid-row-end: 7;
+  border: grey 1px solid;
 }
 
 #settings {
@@ -283,6 +296,7 @@ sup {
   grid-row-start: 1;
   grid-row-end: 2;
   border: grey 1px solid;
+  padding-bottom: 10%;
 }
 
 #member-1-name {
@@ -312,6 +326,7 @@ sup {
   grid-template-rows: 100%;
   border: grey 1px solid;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #member-3 {
@@ -320,6 +335,7 @@ sup {
   grid-template-rows: 100%;
   border: grey 1px solid;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #member-4 {
@@ -328,6 +344,7 @@ sup {
   grid-template-rows: 100%;
   border: grey 1px solid;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #recent-member-1-name {
@@ -369,4 +386,56 @@ sup {
   border-radius: 50%;
   background: #4CAF50;
   color: white;
+}
+
+#form1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-right: 5%;
+}
+
+#userSearch {
+  display: flex;
+  width: 100%;
+  border: grey 1px solid;
+  padding: 0;
+  margin-bottom: 3%;
+}
+
+#message {
+  display: flex;
+  width: 100%;
+  border: grey 1px solid;
+  padding: 0;
+  margin-bottom: 3%;
+  /*grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;*/
+}
+
+#messageSubmit {
+  display: flex;
+  color: white;
+  background-color: lavender;
+  width: 100%;
+  padding: 0;
+}
+
+#email-notification {
+  margin-bottom: 3%
+}
+
+#profile-public {
+  margin-bottom: 3%
+}
+
+#saveSubmit {
+  width: 45%;
+}
+
+#cancelSubmit {
+  width: 45%;
 }
