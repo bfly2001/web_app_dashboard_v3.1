@@ -15,12 +15,14 @@
         ],
         backgroundColor: 'lavender',
         borderWidth: 3,
-        borderColor: 'lavendar',
+        borderColor: 'lavender',
+        pointBackgroundColor: 'white',
+        pointRadius: 4,
       }]
     },
     options: {
       title:{
-        display: true,
+        display: false,
         text: 'Traffic',
         horizontalAlign: 'left',
       }
