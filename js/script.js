@@ -5,33 +5,25 @@
     data: {
       labels:['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
       datasets:[{
-        label:'weekly',
-        data:[
-          0,
-          750,
-          1250,
-          1000,
-          1500,
-          2000,
-          1500,
-          1750,
-          1250,
-          1750,
-          2250,
-        ],
+        label: 'Hourly',
         backgroundColor: 	'rgba(230,230,250, 0.3)',
         borderWidth: 3,
         borderColor: 'lavender',
         pointBackgroundColor: 'white',
         pointRadius: 4,
-      }]
+        data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+      }, {
+          label: 'Daily',
+          backgroundColor: 	'rgba(400,230,250, 0.3)',
+          borderWidth: 3,
+          borderColor: 'lavender',
+          pointBackgroundColor: 'white',
+          pointRadius: 4,
+          data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+        }
+      ]
     },
     options: {
-      title:{
-        display: false,
-        text: 'Traffic',
-        horizontalAlign: 'left',
-      },
       elements: {
             line: {
                 tension: 0 // disables bezier curves
@@ -62,10 +54,8 @@
       }]
     },
     options: {
-      title:{
-        display: true,
-        text: 'Traffic',
-        horizontalAlign: 'left',
+      legend:{
+        display: false,
       }
     }
   });
@@ -75,26 +65,27 @@
   let mobileUserChart = new Chart(myChart3, {
     type: 'doughnut',
     data: {
-      labels:['S', 'M', 'T', 'W', 'TH', 'F', 'S'],
+      labels:['Phones', 'Tablets', 'Desktops'],
       datasets:[{
-        label:'traffic',
+        label:'Mobile Users',
         data:[
-          500,
-          1000,
-          1500,
-          2000,
-          2500,
+          70,
+          15,
+          15,
         ],
-        backgroundColor: 'lavender',
+        backgroundColor: ["lavender","green","teal"],
         borderWidth: 3,
         borderColor: 'lavendar',
       }]
     },
     options: {
       title:{
-        display: true,
+        display: false,
         text: 'Traffic',
         horizontalAlign: 'left',
-      }
+      },
+      legend: {
+      position: 'right'
+     }
     }
   });
