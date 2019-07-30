@@ -190,6 +190,7 @@ select {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  border: 1px grey solid;
 }
 
 #bar-graph {
@@ -197,6 +198,7 @@ select {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  border: 1px grey solid;
 }
 
 #circle-graph {
@@ -204,6 +206,7 @@ select {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  border: 1px grey solid;
 }
 
 #social-stats {
@@ -213,6 +216,7 @@ select {
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
+  border: 1px grey solid;
 }
 
 #new-members {
