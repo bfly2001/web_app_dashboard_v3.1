@@ -20,7 +20,23 @@
           pointBackgroundColor: 'white',
           pointRadius: 4,
           data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
-        }
+        }, {
+            label: 'Weekly',
+            backgroundColor: 	'rgba(90, 205, 90, 0.3)',
+            borderWidth: 3,
+            borderColor: 'lavender',
+            pointBackgroundColor: 'white',
+            pointRadius: 4,
+            data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+          }, {
+              label: 'Monthly',
+              backgroundColor: 	'rgba(205, 205, 90, 0.3)',
+              borderWidth: 3,
+              borderColor: 'lavender',
+              pointBackgroundColor: 'white',
+              pointRadius: 4,
+              data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+            }
       ]
     },
     options: {
@@ -28,8 +44,11 @@
             line: {
                 tension: 0 // disables bezier curves
             }
+          },
+      legend: {
+              position: 'top',
+           }
         }
-    }
   });
 
   let myChart2 = document.getElementById('myChart2').getContext('2d');
@@ -74,8 +93,7 @@
           15,
         ],
         backgroundColor: ["lavender","green","teal"],
-        borderWidth: 3,
-        borderColor: 'lavendar',
+        borderColor: ["lavender","green","teal"],
       }]
     },
     options: {

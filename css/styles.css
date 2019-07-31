@@ -201,6 +201,10 @@ select {
   border: 1px grey solid;
 }
 
+.stats-cells {
+  border: grey 1px solid;
+}
+
 #circle-graph {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -216,7 +220,10 @@ select {
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  border: 1px grey solid;
+  grid-gap: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #new-members {
