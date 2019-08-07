@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="nested" id="header-avatar">
-            <img src='images/member-2.jpg' alt='profile avatar'>
+            <img id='header-profile-image' src='images/member-2.jpg' alt='profile avatar'>
             <h2>Profile-Name</h2>
           </div>
         </div>
@@ -115,19 +115,22 @@
           </div>
         </div>
         <div class="main-content">
-          <div class="nested" id="dashboard-title">
-          <h1 id="dashboard-h2-style">Dashboard</h2>
-          </div>
-          <div class="nested" id="search-box">
-            <form class="search-form">
+          <div id="dashboard">
+            <div class="nested" id="dashboard-title">
+              <h1 id="dashboard-h2-style">Dashboard</h2>
+            </div>
+            <div class="nested" id="search-box">
+              <form class="search-form">
               <input id='search-input' type="search" name="q" placeholder="Search">
               <button id='search-button' type="submit"><svg id='mag-glass' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="grey" fill="grey" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></button>
-          </form>
+            </form>
+            </div>
           </div>
-          <div class="nested" id="line-graph">
+        <div class="nested" id="line-graph">
             <h3>Traffic</h3>
             <canvas id="myChart1"></canvas>
-          </div>
+        </div>
+        <div class='nested' id='bar-and-circle-graphs'>
           <div class="nested" id="bar-graph">
             <h3>Daily Traffic</h3>
             <canvas id="myChart2"></canvas>
@@ -136,8 +139,9 @@
             <h3>Mobile Users</h3>
             <canvas id="myChart3"></canvas>
           </div>
-          <div class="nested" id="social-stats">
-            <h3>Social Stats</h3>
+        </div>
+        <div class="nested" id="social-stats">
+          <h3>Social Stats</h3>
             <div id='twitter-stats' class='stats-cells'>
               <svg class='social-svg'>
                 <circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="lavender"></circle>
@@ -182,74 +186,77 @@
               <h4 class='social-h4'>2,530</h4>
             </div>
           </div>
-          <div class="nested" id="new-members">
-            <div id='member-1'>
-              <h3>New Members</h3>
-              <img src="images/member-1.jpg" alt="photo of member-1">
-              <h5 id='member-1-name'>Victoria Chambers</h5>
-              <a id='member-1-email' href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
-              <h4 id='member-1-date'>10/5/2015</h4>
+          <div id="newmembers-recentactivity">
+            <div class="nested" id="new-members">
+              <div id='member-1'>
+                <h3>New Members</h3>
+                <img src="images/member-1.jpg" alt="photo of member-1">
+                <h5 id='member-1-name'>Victoria Chambers</h5>
+                <a id='member-1-email' href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+                <h4 id='member-1-date'>10/5/2015</h4>
+              </div>
+              <div id='member-2'>
+                <img src="images/member-2.jpg" alt="photo of member-2">
+                <h5>Rob Lynn</h5>
+                <a href="mailto:rob.lynn80@example.com">rob.lynn80@example.com</a>
+                <h4>10/5/2015</h4>
+              </div>
+              <div id='member-3'>
+                <img src="images/member-3.jpg" alt="photo of member-3">
+                <h5>Jane Michaels</h5>
+                <a href="mailto:jane.michaels80@example.com">jane.michaels80@example.com</a>
+                <h4>10/5/2015</h4>
+              </div>
+              <div id='member-4'>
+                <img src="images/member-4.jpg" alt="photo of member-4">
+                <h5>Steve Johnson</h5>
+                <a href="mailto:steve.johnson@example.com">steve.johnson@example.com</a>
+                <h4>10/5/2015</h4>
+              </div>
             </div>
-            <div id='member-2'>
-              <img src="images/member-2.jpg" alt="photo of member-2">
-              <h5>Rob Lynn</h5>
-              <a href="mailto:rob.lynn80@example.com">rob.lynn80@example.com</a>
-              <h4>10/5/2015</h4>
-            </div>
-            <div id='member-3'>
-              <img src="images/member-3.jpg" alt="photo of member-3">
-              <h5>Jane Michaels</h5>
-              <a href="mailto:jane.michaels80@example.com">jane.michaels80@example.com</a>
-              <h4>10/5/2015</h4>
-            </div>
-            <div id='member-4'>
-              <img src="images/member-4.jpg" alt="photo of member-4">
-              <h5>Steve Johnson</h5>
-              <a href="mailto:steve.johnson@example.com">steve.johnson@example.com</a>
-              <h4>10/5/2015</h4>
+            <div class="nested" id="recent-activity">
+              <div id='member-1'>
+                <h3>Recent Activity</h3>
+                <img src="images/member-1.jpg" alt="photo of member-1">
+                <h5 id='recent-member-1-name'>Victoria Chambers commented on YourApp's SEO tips</h5>
+                <p id='recent-member-1-date'>4 hours ago</p>
+              </div>
+              <div id='member-2'>
+                <img src="images/member-2.jpg" alt="photo of member-2">
+                <h5>Rob Lynn likes the post Facebook's Changes for 2016</h5>
+                <p>5 hours ago</p>
+              </div>
+              <div id='member-3'>
+                <img src="images/member-3.jpg" alt="photo of member-3">
+                <h5>Jane Michaels commmented on the post Facebook's Changes for 2016</h5>
+                <p>5 hours ago</p>
+              </div>
+              <div id='member-4'>
+                <img src="images/member-4.jpg" alt="photo of member-4">
+                <h5>Steve Johnson posted YourApp's SEO tips</h5>
+                <p>1 day ago</p>
+              </div>
             </div>
           </div>
-          <div class="nested" id="recent-activity">
-            <div id='member-1'>
-              <h3>Recent Activity</h3>
-              <img src="images/member-1.jpg" alt="photo of member-1">
-              <h5 id='recent-member-1-name'>Victoria Chambers commented on YourApp's SEO tips</h5>
-              <p id='recent-member-1-date'>4 hours ago</p>
+          <div id='message-settings'>
+            <div class="nested" id="message-user">
+              <h3>Message User</h3>
+              <form id='form1'>
+                <input type="search" id="userSearch" name="q" placeholder="Search for User">
+                <textarea id="message" name="message" form="form1">Message for User</textarea>
+                <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
+              </form>
             </div>
-            <div id='member-2'>
-              <img src="images/member-2.jpg" alt="photo of member-2">
-              <h5>Rob Lynn likes the post Facebook's Changes for 2016</h5>
-              <p>5 hours ago</p>
-            </div>
-            <div id='member-3'>
-              <img src="images/member-3.jpg" alt="photo of member-3">
-              <h5>Jane Michaels commmented on the post Facebook's Changes for 2016</h5>
-              <p>5 hours ago</p>
-            </div>
-            <div id='member-4'>
-              <img src="images/member-4.jpg" alt="photo of member-4">
-              <h5>Steve Johnson posted YourApp's SEO tips</h5>
-              <p>1 day ago</p>
-            </div>
-          </div>
-          <div class="nested" id="message-user">
-            <h3>Message User</h3>
-            <form id='form1'>
-              <input type="search" id="userSearch" name="q" placeholder="Search for User">
-              <textarea id="message" name="message" form="form1">Message for User</textarea>
-              <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
-            </form>
-          </div>
-          <div class="nested" id="settings">
-            <h3>Settings</h3>
-            <div id="email-notification">
-              <label for="email-notification" name='email-notifications'>Send Email Notifications</label>
-              <input type="checkbox" id="email-notification" placeholder="ON">
-            </div>
-            <div id="profile-public">
-              <label for="profile-public" name='profile-public'>Set Profile to Public</label>
-              <input type="checkbox" id="profile-public" placeholder="ON">
-            </div>
+            <div class="nested" id="settings">
+              <h3>Settings</h3>
+              <div id="email-notification">
+                <label for="email-notification" name='email-notifications'>Send Email Notifications</label>
+                <input type="checkbox" id="email-notification" placeholder="ON">
+              </div>
+              <div id="profile-public">
+                <label for="profile-public" name='profile-public'>Set Profile to Public</label>
+                <input type="checkbox" id="profile-public" placeholder="ON">
+              </div>
             <div>
             <select>
               <option selected disabled>Select Timezone</option>
