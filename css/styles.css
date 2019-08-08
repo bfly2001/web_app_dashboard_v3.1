@@ -288,6 +288,7 @@ select {
   grid-row-start: 3;
   grid-row-end: 4;
   border: 1px grey solid;
+  padding-bottom: 5%;
 }
 
 #social-stats {
