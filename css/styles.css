@@ -271,6 +271,7 @@ select {
   grid-row-end: 2;
   align-self: end;
   margin-bottom: 0;
+  color: #8484ff;
 }
 
 .social-h4 {
@@ -280,6 +281,7 @@ select {
   grid-row-end: 3;
   align-self: start;
   margin-top: 0;
+  font-size: xx-large;
 }
 
 #circle-graph {
