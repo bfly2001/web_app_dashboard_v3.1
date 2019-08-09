@@ -311,7 +311,10 @@ select {
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
-  border: grey 1px solid;
+  border-top: grey 1px solid;
+  border-bottom: grey 1px solid;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .member-activity-image-v1 {
@@ -342,6 +345,8 @@ select {
   display: grid;
   grid-template-rows: 27% 24% 24% 24%;
   grid-template-columns: auto;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 #recent-activity {
@@ -353,6 +358,8 @@ select {
   grid-row-start:5;
   grid-row-end:6;
   border-left: grey 1px solid;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 #message-settings {
   display: grid;
@@ -445,6 +452,9 @@ select {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  font-family: 'Muli', sans-serif;
+  font-size: 13.28px;
+  justify-self: end;
 }
 
 #member-2-date {
@@ -453,6 +463,9 @@ select {
   grid-row-start: 1;
   grid-row-end: 3;
   align-self: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 13.28px;
+  justify-self: end;
 }
 
 #member-2-name {
