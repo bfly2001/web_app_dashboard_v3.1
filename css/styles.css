@@ -311,6 +311,7 @@ select {
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
+  border: grey 1px solid;
 }
 
 .member-activity-image-v1 {
@@ -351,6 +352,7 @@ select {
   grid-column-end: 3;
   grid-row-start:5;
   grid-row-end:6;
+  border-left: grey 1px solid;
 }
 #message-settings {
   display: grid;
@@ -367,7 +369,6 @@ select {
   grid-column-end: 2;
   grid-row-start: 6;
   grid-row-end: 7;
-  border: grey 1px solid;
 }
 
 #settings {
@@ -376,8 +377,6 @@ select {
   grid-row-start: 6;
   grid-row-end: 7;
   border-left: grey 1px solid;
-  border-top: grey 1px solid;
-  border-bottom: grey 1px solid;
 }
 
 #dashboard-icon {
@@ -424,9 +423,6 @@ select {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  border-left: grey 1px solid;
-  border-top: grey 1px solid;
-  border-bottom: grey 1px solid;
 }
 
 #member-1-name {
@@ -471,27 +467,21 @@ select {
   display: grid;
   grid-template-columns: 15% 50% 35%;;
   grid-template-rows: 50% 50%;
-  border-left: grey 1px solid;
   border-top: grey 1px solid;
-  border-bottom: grey 1px solid;
 }
 
 #member-3 {
   display: grid;
   grid-template-columns: 15% 50% 35%;
   grid-template-rows: 50% 50%;
-  border-left: grey 1px solid;
   border-top: grey 1px solid;
-  border-bottom: grey 1px solid;
 }
 
 #member-4 {
   display: grid;
   grid-template-columns: 15% 50% 35%;;
   grid-template-rows: 50% 50%;
-  border-left: grey 1px solid;
   border-top: grey 1px solid;
-  border-bottom: grey 1px solid;
 }
 
 #recent-member-1-name {
