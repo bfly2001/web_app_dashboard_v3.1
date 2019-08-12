@@ -262,6 +262,7 @@ select {
   grid-row-start: 1;
   grid-row-end: 3;
   max-width: 100%;
+  align-self: center;
 }
 
 .social-h3 {
