@@ -220,6 +220,11 @@ select {
   align-self: center;
   justify-self: end;
   margin-right: 10%;
+  opacity: 0.5;
+}
+
+#header-bell:hover {
+  opacity: 1;
 }
 
 #header-avatar {
