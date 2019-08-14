@@ -240,24 +240,24 @@
           </div>
           <div id='message-settings'>
             <div class="nested" id="message-user">
-              <h3>Message User</h3>
+              <h3 id='messageH3'>Message User</h3>
               <form id='form1'>
                 <input type="search" id="userSearch" name="q" placeholder="Search for User">
                 <textarea id="message" name="message" form="form1">Message for User</textarea>
-                <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
               </form>
+              <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
             </div>
             <div class="nested" id="settings">
               <h3>Settings</h3>
               <div id="email-notification">
-                <label for="email-notification" name='email-notifications'>Send Email Notifications</label>
-                <input type="checkbox" id="email-notification" placeholder="ON">
+                <label for="email-notification" name='email-notifications'>Send Email Notifications
+                <input class='toggle-switch' type="checkbox" id="email-notification" placeholder="ON">
               </div>
               <div id="profile-public">
                 <label for="profile-public" name='profile-public'>Set Profile to Public</label>
-                <input type="checkbox" id="profile-public" placeholder="ON">
+                <input class='toggle-switch' type="checkbox" id="profile-public" placeholder="ON">
               </div>
-            <div>
+            <div id='timeZone'>
             <select>
               <option selected disabled>Select Timezone</option>
               <option value="Pacific">Pacific</option>
