@@ -265,7 +265,7 @@ select {
   padding-left: 30%;
   padding-top: 3%;
   padding-bottom: 0px;
-  padding-right: 3%;
+  padding-right: 7%;
   border-right: 0;
 }
 
@@ -273,6 +273,33 @@ select {
   border: grey 1px solid;
   display: grid;
   grid-template-columns: 80% 20%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: lavender;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 3%;
+  margin-right: 2%;
+  width: 91%;
+  font-family: 'Muli', sans-serif;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
 
 #line-graph {
