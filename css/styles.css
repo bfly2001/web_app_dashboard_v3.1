@@ -296,6 +296,7 @@ select {
   grid-row-start: 3;
   grid-row-end: 4;
   border: 1px grey solid;
+  padding-left: 5%;
 }
 
 .stats-cells {
@@ -341,6 +342,8 @@ select {
   grid-row-end: 4;
   border: 1px grey solid;
   padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #social-stats {
