@@ -245,9 +245,11 @@
           <div id='message-settings'>
             <div class="nested" id="message-user">
               <h3 id='messageH3'>Message User</h3>
-              <form id='form1'>
-                <input type="search" id="userSearch" name="q" placeholder="Search for User">
-                <textarea id="message" name="message" form="form1">Message for User</textarea>
+              <form autocomplete="off" id='form1'>
+                <div class="autocomplete">
+                  <input type="text" id="userSearch" name="q" placeholder="Search for User">
+                </div>
+                  <textarea id="message" name="message" form="form1">Message for User</textarea>
               </form>
               <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
             </div>
