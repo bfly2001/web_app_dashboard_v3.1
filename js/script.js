@@ -177,3 +177,45 @@ document.addEventListener("click", function (e) {
 }
 
 autocomplete(document.getElementById("userSearch"), users);
+
+function App() { }
+
+App.prototype.setState = function(key, state) {
+  localStorage.setItem(key, state);
+}
+
+App.prototype.getState = function(key) {
+  return localStorage.getItem(key);
+}
+
+function init() {
+  var app = new App();
+
+  var checkboxes = document.querySelectorAll('.checkboxes input[type="checkbox"]');
+
+  for (var i = 0; i < checkboxes.length; i++) {
+
+    var checkbox = checkboxes[i];
+
+    var isSaved = app.getState(checkbox.id);
+
+    if (isSaved === 'true') {
+      checkbox.checked = true;
+    }
+
+    checkbox.addEventListener('click', function(e) {
+      var _checkbox = e.target;
+      app.setState(_checkbox.id, _checkbox.checked)
+    });
+  }
+}
+
+init();
+
+const mySel = document.getElementById("zone");
+mySel.addEventListener("change",function() {
+  localStorage.setItem("selValue",this.value);
+});
+let val = localStorage.getItem("selValue");
+if (val) mySel.value=val;
+mySel.onchange();

@@ -255,21 +255,23 @@
             </div>
             <div class="nested" id="settings">
               <h3>Settings</h3>
-              <div id="email-notification">
-                <label for="email-notification" name='email-notifications'>Send Email Notifications
-                <input class='toggle-switch' type="checkbox" id="email-notification" placeholder="ON">
-              </div>
-              <div id="profile-public">
-                <label for="profile-public" name='profile-public'>Set Profile to Public</label>
-                <input class='toggle-switch' type="checkbox" id="profile-public" placeholder="ON">
-              </div>
+              <div class='checkboxes'>
+                <div id="email-notification">
+                  <label for="email-notification" name='email-notifications'>Send Email Notifications
+                    <input class='toggle-switch' type="checkbox" id="email-notification">
+                </div>
+                <div id="profile-public">
+                  <label for="profile-public" name='profile-public'>Set Profile to Public</label>
+                  <input class='toggle-switch' type="checkbox" id="profile-public">
+                </div>
+            </div>
             <div id='timeZone'>
-            <select>
-              <option selected disabled>Select Timezone</option>
-              <option value="Pacific">Pacific</option>
-              <option value="Mountain">Mountain</option>
-              <option value="Central">Central</option>
-              <option value="Eastern">Eastern</option>
+            <select id='zone'>
+              <option>Select Timezone</option>
+              <option value="0">Pacific</option>
+              <option value="1">Mountain</option>
+              <option value="2">Central</option>
+              <option value="3">Eastern</option>
             </select>
           </div>
           <button id="saveSubmit" type="submit" form="form2" value="Save">Save</button>
