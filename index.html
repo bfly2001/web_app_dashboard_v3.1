@@ -15,7 +15,7 @@
         <div class="header">
           <div class="nested" id="header-title">
             <h1><b>Your</b>App<sup>TM</sup></h1>
-            <div id="header-bell">
+            <div id='header-bell' onclick="dropFunction('dropdown')">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
               <style type="text/css">
@@ -30,7 +30,11 @@
               </svg>
               <span id="badge"></span>
             </div>
-          </div>
+            <div id='dropdown'>
+              <h3 class='dropAlert'>You Have 5 New Messages!</h3>
+              <h3 class='dropAlert'>You have 10 new views</h3>
+            </div>
+        </div>
           <div class="nested" id="header-avatar">
             <img id='header-profile-image' src='images/member-2.jpg' alt='profile avatar'>
             <h2>Profile-Name</h2>

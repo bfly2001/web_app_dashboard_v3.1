@@ -1,3 +1,9 @@
+
+function dropFunction(el) {
+var tag=document.getElementById(el);
+  tag.style.display = tag.style.display === 'block' ? 'none' : 'block';
+}
+
   let myChart1 = document.getElementById('myChart1').getContext('2d');
 
   let trafficChart = new Chart(myChart1, {
@@ -204,6 +210,7 @@ function init() {
     }
 
     checkbox.addEventListener('click', function(e) {
+
       var _checkbox = e.target;
       app.setState(_checkbox.id, _checkbox.checked)
     });

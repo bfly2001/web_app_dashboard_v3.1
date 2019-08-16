@@ -184,6 +184,21 @@ select {
   opacity: 1;
 }
 
+#dropdown {
+  display: none;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  grid-column: 2 / 3;
+  justify-self: end;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: lavender;
+}
+
+.dropAlert {
+  border-bottom: black 1px solid;
+}
+
 #header-avatar {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -664,6 +679,12 @@ select {
 .autocomplete-active {
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+.checkboxes {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: contents;
 }
 
 #message {
