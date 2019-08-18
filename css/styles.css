@@ -279,6 +279,45 @@ select {
   color: black;
 }
 
+#line-graph_legend{
+   height:62px;
+}
+
+#line-graph_legend{
+    width:100%;
+}
+
+#line-graph_legend> ul{
+    padding: 0;
+    text-align: center;
+}
+
+#line-graph_legend {
+  width:100%;
+  bottom:10%;
+}
+
+#line-graph_legend li {
+    cursor: pointer;
+    margin: 4px 3px;
+    display: inline-table;
+}
+#line-graph_legend li span {
+    position: relative;
+    padding: 3px 10px;
+    border-radius: 13px;
+    color: white;
+    z-index: 2;
+    font-size: 11px;
+}
+
+#line-graph_legend{
+    height: 62px;
+    overflow-y: auto;
+    display: grid;
+    justify-content: end;
+}
+
 #line-graph {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -435,6 +474,8 @@ select {
   grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 8;
+  padding-bottom: 3%;
+  border-bottom: grey 1px solid;
 }
 
 #message-user {
