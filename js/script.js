@@ -17,7 +17,7 @@ var tag=document.getElementById(el);
         borderColor: 'lavender',
         pointBackgroundColor: 'white',
         pointRadius: 4,
-        data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+        data:[0,75,125,10,15,20,15,17,12,17,22],
       }, {
           label: 'Daily',
           backgroundColor: 	'rgba(400,230,250, 0.3)',
@@ -25,7 +25,7 @@ var tag=document.getElementById(el);
           borderColor: 'lavender',
           pointBackgroundColor: 'white',
           pointRadius: 4,
-          data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+          data:[0,300,250,100,150,200,150,175,125,175,225],
         }, {
             label: 'Weekly',
             backgroundColor: 	'rgba(90, 205, 90, 0.3)',
@@ -41,7 +41,7 @@ var tag=document.getElementById(el);
               borderColor: 'lavender',
               pointBackgroundColor: 'white',
               pointRadius: 4,
-              data:[0,750,1250,1000,1500,2000,1500,1750,1250,1750,2250],
+              data:[0,1750,1250,2000,1000,2000,500,750,1250,1850,2250],
             }
       ]
     },
