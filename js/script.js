@@ -1,9 +1,10 @@
-
+//drop menu for alerts
 function dropFunction(el) {
 var tag=document.getElementById(el);
   tag.style.display = tag.style.display === 'block' ? 'none' : 'block';
 }
 
+//line chart
   let myChart1 = document.getElementById('myChart1').getContext('2d');
 
   let trafficChart = new Chart(myChart1, {
@@ -89,6 +90,7 @@ function legendClickCallback(event) {
   chart.update();
 }
 
+//bar chart
   let myChart2 = document.getElementById('myChart2').getContext('2d');
 
   let dailyTrafficChart = new Chart(myChart2, {
@@ -117,6 +119,7 @@ function legendClickCallback(event) {
     }
   });
 
+//doughnut chart
   let myChart3 = document.getElementById('myChart3').getContext('2d');
 
   let mobileUserChart = new Chart(myChart3, {
@@ -146,6 +149,7 @@ function legendClickCallback(event) {
     }
   });
 
+//member search autocomplete
   var users = ["Victoria Chambers","Rob Lynn","Jane Michaels","Steve Johnson"];
 
   function autocomplete(inp, arr) {
@@ -216,6 +220,7 @@ document.addEventListener("click", function (e) {
 
 autocomplete(document.getElementById("userSearch"), users);
 
+//save settings to local storage
 function App() { }
 
 App.prototype.setState = function(key, state) {
