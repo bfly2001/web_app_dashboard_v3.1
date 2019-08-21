@@ -295,13 +295,13 @@ select {
 	float: right;
   cursor: pointer;
   margin: 3%;
-  background-color: greenyellow;
   border-radius: 50%;
   padding: 1%;
+  background-color: lightgreen;
 }
 
 .inactive {
-  opacity: .5;
+  opacity: 1;
 }
 
 #line-graph {
@@ -311,7 +311,6 @@ select {
   grid-row-end: 3;
   padding-left: 3%;
   padding-right: 3%;
-
 }
 
 #bar-and-circle-graphs {

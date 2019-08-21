@@ -66,8 +66,11 @@ var tag=document.getElementById(el);
 
       if (targetLi.hasClass('inactive')) {
       	  trafficChart.getDatasetMeta(targetLi.index()).hidden=true;
+          targetLi.css('background-color', 'transparent');
+
       } else {
           trafficChart.getDatasetMeta(targetLi.index()).hidden=false;
+          targetLi.css('background-color', 'lightgreen');
       }
   		trafficChart.update();
   });
