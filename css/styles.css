@@ -284,7 +284,7 @@ select {
 }
 
 #line-graph_legend li span {
-  display: inline-block;
+  display: none;
   width: 12px;
   height: 12px;
   margin-right: 5px;
@@ -292,8 +292,12 @@ select {
 }
 
 #line-graph_legend ul li {
-	float:left;
+	float: right;
   cursor: pointer;
+  margin: 3%;
+  background-color: greenyellow;
+  border-radius: 50%;
+  padding: 1%;
 }
 
 .inactive {
