@@ -309,6 +309,7 @@ select {
   border-radius: 50%;
   padding: 1%;
   background-color: lightgreen;
+  color: white;
 }
 
 .inactive {
