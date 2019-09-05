@@ -263,12 +263,15 @@
           <div id='message-settings'>
             <div class="nested" id="message-user">
               <h3 id='messageH3'>MESSAGE USER</h3>
+              <form action="#" method="post">
                 <div class="autocomplete">
-                  <input type="text" id="userSearch" name="q" placeholder="Search for User">
+                  <input type="text" id="userSearch" name="q" placeholder="Search for User" required>
+                  <span class='messageuserSpan'>Please select a user</span>
                 </div>
-                  <textarea id="message" name="message" form="form1">Message for User</textarea>
+                  <textarea id="message" name="message" placeholder="Search for User" required form="form1"></textarea>
+                  <span class='messageuserSpan'>Please add a message</span>
               </form>
-              <button id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
+              <button onclick='clickAlert()' id="messageSubmit" type="submit" form="form1" value="Submit">Send</button>
             </div>
             <div class="nested" id="settings">
               <h3>SETTINGS</h3>

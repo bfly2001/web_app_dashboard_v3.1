@@ -251,3 +251,43 @@ mySel.addEventListener("change",function() {
 let val = localStorage.getItem("selValue");
 if (val) mySel.value=val;
 mySel.onchange();
+
+//message sent
+function clickAlert() {
+    alert("Message Sent");
+    $('#message').val('Message for User');
+}
+
+//message validation
+
+const usernameInput = document.getElementById("userSearch");
+const messageInput = document.getElementById("message");
+
+function isValidUsername(userSearch) {
+  return /[users]/.test(userSearch);
+}
+function isValidMessage(message) {
+  return /[0-9a-zA-Z]/.test(message);
+}
+
+function showOrHideTip(show, element) {
+  // show element when show is true, hide when false
+  if (show) {
+    element.style.display = "inherit";
+  } else {
+    element.style.display = "none";
+  }
+}
+
+function createListener(validator) {
+  return e => {
+    const text = e.target.value;
+    const valid = validator(text);
+    const showTip = text !== "" && !valid;
+    const tooltip = e.target.nextElementSibling;
+    showOrHideTip(showTip, tooltip);
+  };
+}
+
+usernameInput.addEventListener("input", createListener(isValidUsername));
+messageInput.addEventListener("input", createListener(isValidMessage));
