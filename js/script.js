@@ -250,16 +250,22 @@ mySel.addEventListener("change",function() {
 });
 let val = localStorage.getItem("selValue");
 if (val) mySel.value=val;
-mySel.onchange();
+//mySel.onchange();
 
 //message sent
+const usernameInput = document.getElementById("userSearch");
+const messageInput = document.getElementById("message");
+
 function clickAlert() {
-    alert("Message Sent");
-    $('#message').val('Message for User');
+    if (usernameInput.value === "" || messageInput.value === "") {
+      alert('Please input a username and message');
+    } else {
+      alert("Message Sent");
+    }
 }
 
 //message validation
-
+/*
 const usernameInput = document.getElementById("userSearch");
 const messageInput = document.getElementById("message");
 
@@ -291,3 +297,4 @@ function createListener(validator) {
 
 usernameInput.addEventListener("input", createListener(isValidUsername));
 messageInput.addEventListener("input", createListener(isValidMessage));
+*/
