@@ -2,6 +2,7 @@
 function dropFunction(el) {
 var tag=document.getElementById(el);
   tag.style.display = tag.style.display === 'block' ? 'none' : 'block';
+  document.getElementById("badge").style.display = "none";
 }
 
 //line chart
