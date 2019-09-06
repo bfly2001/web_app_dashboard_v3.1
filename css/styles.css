@@ -694,6 +694,11 @@ select {
   grid-row-end: 5;
 }
 
+#messageForm {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
 .messageuserSpan {
   border-radius: 5px;
   display: none;
