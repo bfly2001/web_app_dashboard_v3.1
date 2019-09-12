@@ -1,3 +1,9 @@
+//nav bar opacity onclick
+
+function opacityFunction() {
+  document.element.style.opacity = "1";
+}
+
 //drop menu for alerts
 function dropFunction(el) {
 var tag=document.getElementById(el);
