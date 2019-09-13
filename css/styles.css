@@ -241,7 +241,7 @@ select {
 }
 
 #header-profile-image {
-  width: 80%;
+  width: 60%;
   align-self: center;
   border-radius: 50%;
   margin-left: 10%;
@@ -329,8 +329,8 @@ select {
   cursor: pointer;
   margin: 1%;
   margin-top: 0;
-  border-radius: 100%;
-  padding: 2%;
+  border-radius: 50%;
+  padding: 1%;
   background-color: lightgreen;
   color: white;
   font-size: x-small;
@@ -932,6 +932,10 @@ select {
   #social-stats {
     grid-template-columns: repeat(3, 200px);
   }
+
+  #line-graph_legend ul li {
+    width: 10%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1110,5 +1114,9 @@ select {
 
   #social-stats {
     grid-template-columns: repeat(3, 350px);
+  }
+
+  #line-graph_legend ul li {
+    font-size: large;
   }
 }
