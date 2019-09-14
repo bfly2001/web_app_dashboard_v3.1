@@ -1,5 +1,6 @@
 
-canvas { max-width: 100%;
+canvas {
+  max-width: 100%;
 }
 
 body {
@@ -877,6 +878,7 @@ select {
     grid-gap: 0;
     grid-area: sd;
     background-color: #c7c7f7;
+    max-width: 75px;
   }
 
     #dashboard-icon {
